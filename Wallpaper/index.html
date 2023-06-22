@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpapers</title>
+    <style>
+        #wallpaper{
+            border: 5px solid #000;
+            width: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="controls">
+		<tr>
+			<td>Width:</td>
+			<td><input type="number" class="input-width" value="1080"> px</td>
+		</tr>
+		<tr>
+			<td>Height:</td>
+			<td><input type="number" class="input-height" value="720"> px</td>
+		</tr>
+		<tr>
+			<td>Linear Start Color:</td>
+			<td><input type="color" class="input-linear-start-color" value="#00b3ff"></td>
+		</tr>
+		<tr>
+			<td>Linear End Color:</td>
+			<td><input type="color" class="input-linear-end-color" value="#004a8f"></td>
+		</tr>
+		<tr>
+			<td>Radial Color:</td>
+			<td><input type="color" class="input-radial-color" value="#8c00ff"></td>
+		</tr>
+		<tr>
+			<td><button type="button" class="btn-generate-wallpaper">Generate Wallpaper</button></td>
+		</tr>
+	</table>
+    <canvas id="wallpaper" width="1080" height="720"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
