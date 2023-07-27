@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to voz</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-evenly">
+      <h3>Texto:</h3>
+    </div>
+
+    <div style="display: flex; justify-content: space-evenly">
+      <textarea id="texto" cols="30" rows="10"></textarea>
+    </div>
+
+    <div style="display: flex; justify-content: space-evenly">
+      <button type="button" onclick="leerTexto()">
+    <i class="bi bi-megaphone"></i>Leer
+    </button>
+      <button type="button" onclick="limpiarTexto()">
+        <i class="bi bi-trash3-fill"></i>Limpiar
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
